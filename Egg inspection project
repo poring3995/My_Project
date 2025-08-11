@@ -12,7 +12,7 @@ class EggInspection:
 
         # 1.1  used 2 models:
 
-            # 1st model: object detection model for tracking the eggs in the video, and crop it for process in the 2nd model
+            # 1st model: object detection model for tracking the eggs in the video, and crop it for processing in the 2nd model
             # 2nd model: object detection model for detecting the defect of the eggs.
         
         self.model_detection = YOLO(r"D:\backup before crash\egg inspection\all model weight\Weight_egg_detection_l_10ep__model\weights\best.pt", "v8")
@@ -148,4 +148,5 @@ class EggInspection:
 if __name__ == "__main__":
     inspection = EggInspection()
     inspection.run()
+
 
